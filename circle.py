@@ -22,7 +22,7 @@ def perimetr(r):
 
 class RectangleTestCase(unittest.TestCase):
     def test_zero_area(self):
-        res = area(0)
+        res = area('a')
         self.assertEqual(res,0)
     
     def test_def_area(self):
