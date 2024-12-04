@@ -22,7 +22,12 @@ jobs:
         uses: actions/setup-python@v3
         with:
           python-version: ${{ matrix.python-version }}
-      
-      - name: Test
+      - name: Test rectangle
         run: python.exe -m unittest rectangle.py
+      - name: Test circle
+        run: python.exe -m unittest circle.py
+      - name: Test square
+        run: python.exe -m unittest square.py
+      - name: Test triangle
+        run: python.exe -m unittest triangle.py
 
